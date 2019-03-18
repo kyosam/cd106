@@ -1,0 +1,30 @@
+@import 'base/var';
+@import 'reset.css';
+
+header{
+    background-color: $backgroundcolor;
+    .menu{
+        background-color: #aaa;
+        ul{
+            li{
+                padding-left: 50px;
+                font-size : $fontsize;
+                float: left;
+            }
+        }
+    }
+}
+
+
+h1{
+    font-size: $fontsize;
+    color: $fontcolor;
+    background-color: $backgroundcolor;
+    span{
+        color: $fontcolorg;
+    }
+}
+
+.clearfix{
+    clear: both;
+}

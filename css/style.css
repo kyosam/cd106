@@ -1,0 +1,19 @@
+@import url(reset.css);
+header {
+  background-color: #00f; }
+  header .menu {
+    background-color: #aaa; }
+    header .menu ul li {
+      padding-left: 50px;
+      font-size: 50px;
+      float: left; }
+
+h1 {
+  font-size: 50px;
+  color: red;
+  background-color: #00f; }
+  h1 span {
+    color: #0f0; }
+
+.clearfix {
+  clear: both; }
