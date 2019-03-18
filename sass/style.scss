@@ -1,5 +1,66 @@
+//===============
+// 基本參數
+//===============
 @import 'base/var';
-@import 'reset.css';
+@import 'base/reset';
+@import 'base/common';
+
+//===============
+// 函式
+//===============
+@import 'mixin/mixin';
+
+
+//===============
+// 頁面組成元素
+//===============
+@import 'layout/header';
+@import 'layout/footer';
+
+
+//===============
+// 頁面
+//===============
+@import 'page/index';
+@import 'page/login';
+@import 'page/content';
+
+.border-radious{
+    border-radius: 50%;
+}
+
+.boxmargin {
+    @include margin();
+}
+
+.box01margin {
+    @include margin();
+}
+
+.box02margin {
+    @include marginvalue(960px);
+}
+
+.btn {
+    @include btn(120px, 40px, #d3d3d3 );
+}
+
+.btns {
+    @include bg($value...);
+}
+
+.btns {
+    @extend .border-radious;
+}
+
+
+
+//呼叫
+.header {
+    @include link (#333, #999, #1553ff, #666);
+}
+
+@include btn-module('.btn-model' , 180px, 40px, #d3d3d3);
 
 header{
     background-color: $backgroundcolor;
@@ -15,7 +76,6 @@ header{
     }
 }
 
-
 h1{
     font-size: $fontsize;
     color: $fontcolor;
@@ -28,3 +88,4 @@ h1{
 .clearfix{
     clear: both;
 }
+

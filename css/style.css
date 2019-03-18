@@ -1,4 +1,51 @@
-@import url(reset.css);
+@charset "UTF-8";
+.border-radious, .btns {
+  border-radius: 50%; }
+
+.boxmargin {
+  margin-left: auto;
+  margin-right: auto; }
+
+.box01margin {
+  margin-left: auto;
+  margin-right: auto; }
+
+.box02margin {
+  width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+  background-color: #bfffa6; }
+
+.btn {
+  width: 120px;
+  height: 40px;
+  background-color: #d3d3d3; }
+
+.btns {
+  color: #1553ff;
+  background-color: #f20;
+  border-color: green;
+  font-size: 14px; }
+
+.header a {
+  /* 已連結過 */
+  /* 滑鼠移至連結 */
+  /* 選擇的連結 */ }
+  .header a:link {
+    color: #333; }
+  .header a:visited {
+    color: #999; }
+  .header a:hover {
+    color: #1553ff; }
+  .header a:active {
+    color: #666; }
+
+.btn-model {
+  width: 180px;
+  height: 40px;
+  background-color: #d3d3d3; }
+
 header {
   background-color: #00f; }
   header .menu {
