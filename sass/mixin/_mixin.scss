@@ -47,3 +47,25 @@
      border-color: $border-c;
      font-size: $font;
 }
+
+// rwd 
+@mixin respond ($breakpoint) {
+    @if $breakpoint=='mobile' {
+        //手機
+        @media all and (max-width: $mb) {
+            @content;
+        }
+    }
+    @else if $breakpoint=='medium' {
+        ///平板
+        @media all and (min-width: $md) {
+            @content;
+        }
+    }
+    @else if $breakpoint=="desktop" {
+        // 桌機
+        @media all and (min-width: $dt) {
+            @content;
+        }
+    }
+ }
